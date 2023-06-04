@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Creative Hub Kosovo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta lang="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Creative Hub Kosovo" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Creative Hub Kosovo" />
+    <link rel="icon" type="image/x-icon" href="./images/Ch_logo.png" />
+    <link rel="stylesheet" text="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" text="text/css" href="./styles/app.css" />
+    <script src="./scripts/script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- -------------------------------------------------------
+               HEADER (TOP-HEADER & BOTTOM-HEADER)
+      ------------------------------------------------------- -->
+      <div id="header">
+        <div class="top_header">
+          <div class="container">
+            <div class="row">
+              <div class="top_left_h col-7 col-md-6 col-lg-6">
+                <p>
+                  Successful careers
+                  <span style="font-weight: 700">made possible</span>
+                </p>
+              </div>
+              <div class="top_right_h col-5 col-md-6 col-lg-6">
+                <a href="tel: +383 49 334 437"
+                  ><img src="./images/Mobile_icon.png" alt="" /> +383 49 334
+                  437</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_header">
+          <div class="container">
+            <div class="row">
+              <div class="bottom_left_h col-6 col-lg-6">
+                <a href="https://creativehubkos.com/"
+                  ><img src="./images/CreativeHub_logo.png" alt=""
+                /></a>
+              </div>
+              <div class="bottom_right_h col-6 col-lg-6">
+                <!-- -------------------------------------
+                            Lg Navbar
+                ------------------------------------- -->
+                <nav class="desk_mobile_none">
+                  <ul>
+                    <li>
+                      <a href="index.html"
+                        >Academies <img src="./images/Vector_navbar.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="index.html"
+                        >Career <img src="./images/Vector_navbar.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="index.html"
+                        >Community <img src="./images/Vector_navbar.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="index.html"
+                        >Campuses <img src="./images/Vector_navbar.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </nav>  
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------
+                 Mobile Hamburger Navbar
+      ------------------------------------- -->
+      <div class="container">
+        <div class="row">
+      <nav id="mob_desktop_none" class="navbar offset-6 col-6">
+        <div class="navbar_mobile container-fluid">
+          <!-- I removed the class 'navbar-toggler' in this bootstrap navbar,
+            so it won't open up a black border in my menu. -->
+            <!-- I removed some other things too, and styled it in my CSS. -->
+          <button onclick="changeMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="hamburger" src="./images/Hamburger_menu.png" alt="">
+          </button>
+          <!-- -- JavaScript -- -->
+          <script>
+            function changeMenu() {
+              let imageIcon = document.getElementById('hamburger');
+              // document.getElementById('hamburger').classList.toggle('opened');
+              if (imageIcon.src.match("./images/x_hamburger.png")) {
+               imageIcon.src="./images/hamburger_menu.png";
+              }
+              else{
+               imageIcon.src="./images/x_hamburger.png";
+              }
+            }
+          </script>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav_ul navbar-nav">
+              <a class="nav-link" href="#">Academies</a>
+              <a class="nav-link" href="#">Career</a>
+              <a class="nav-link" href="#">Community</a>
+              <a class="nav-link" href="#">Campuses</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+      <!-- -----------------------------------------------------------------
+                                FIRST CONTENT
+      ----------------------------------------------------------------- -->
+      <div id="first_content">
+        <div class="container">
+          <div class="row">
+            <!-- ------------------
+              LEFT_CONTENT
+            ------------------ -->
+            <div class="left_content col-md-12 col-lg-5">
+              <h3>Outcomes Oriented + Hire-Me Program Embedded</h3>
+              <h2>
+                <span style="font-weight: 700; color: rgba(86, 151, 224, 1)"
+                  ><</span
+                ><span style="font-weight: 700">Back-End</span
+                ><span style="font-weight: 700; color: rgba(86, 151, 224, 1)"
+                  >></span
+                >
+                Academy
+              </h2>
+
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Open enrollment for:
+                  <span style="font-weight: 700">Fall 2023</span>
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Early Bird price until:
+                  <span style="font-weight: 700">July 15th</span>
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Start of program:
+                  <span style="font-weight: 700">September 2023</span>
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Duration:
+                  <span style="font-weight: 700">12 months</span>
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Experience needed:
+                  <span style="font-weight: 700">Beginners</span>
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  You get:
+                  <span style="font-weight: 700">2 Certificates</span> (Creative
+                  Hub and EU)
+                </p>
+              </div>
+              <div class="tick_paragraph">
+                <span class="tick_icon">
+                  <img src="./images/Vector_tick.png" alt="" />
+                </span>
+                <p>
+                  Includes:
+                  <span style="font-weight: 700">
+                    Personal Branding Training + Introduction to HTML,
+                    Introduction to CSS, Bootstrap, Git, Introduction to
+                    Programming and PHP, Object-Oriented Programming in PHP,
+                    Databases, Introduction to Laravel, Laravel Database
+                    Management, Creating Simple Project with Laravel, Laravel
+                    Authentication and Authorization, jQuery and AJAX, Laravel
+                    APIs, Working with Composer, Laravel Project Development,
+                    Hire-Me Program</span
+                  >
+                </p>
+              </div>
+              <h4>
+                <p>
+                  <span style="font-weight: 700">Register Today </span> and
+                  receive
+                  <a href="#scholarship"
+                    ><span style="color: rgba(86, 151, 224, 1)"> 1000€</span></a
+                  >
+                  Scholarship
+                </p>
+              </h4>
+              <form action="#form_register">
+                <button type="submit">Register Now</button>
+              </form>
+            </div>
+
+            <!-- --------------------------
+                  RIGHT_CONTENT
+            -------------------------- -->
+            <div class="right_content col-12 col-md-12 offset-lg-1 col-lg-6">
+              <!-- /Why isn't col-md-12 (right_content) going under left_content? -->
+              <div class="image_first_content">
+                <img class="img-responsive" src="./images/image_1.png" alt="" />
+                <img class="img-responsive" src="./images/image_2.png" alt="" />
+                <img class="img-responsive" src="./images/image_3.png" alt="" />
+                <img class="img-responsive" src="./images/image_4.png" alt="" />
+                <img class="img-responsive" src="./images/image_5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------
+                                SECOND NAVBAR
+     --------------------------------------------------------------------------- -->
+
+      <div class="container">
+        <div class="row">
+          <div id="second_nav" class="col-12">
+            <nav>
+              <ul>
+                <li>
+                  <a href="index.html">Overview</a>
+                </li>
+                <li>
+                  <a href="#careers">Careers</a>
+                </li>
+                <li>
+                  <a href="#students">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#df">Curriculum</a>
+                </li>
+                <li>
+                  <a href="#scholarship">Tuition</a>
+                </li>
+                <li>
+                  <a href="#advisor">Advisor</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- -----------------------
+            Mobile Menu - Bootstrap
+          ----------------------- -->
+          <nav id="second_mobile" class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand first_a" href="#">Overview</a>
+              <button onclick="upsideDown()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img id="image_changer" class="image-responsive" src="./images/arrow_down.png" alt="">
+              </button>
+              <!-- Change image menu on click - Javascript -->
+              <script>
+                function upsideDown() {
+                  let arrow = document.getElementById('image_changer');
+                  if (arrow.src.match(src='./images/arrow_up.png'))
+                  {
+                    arrow.src = './images/arrow_down.png';
+                  }
+                  else {
+                    arrow.src = './images/arrow_up.png';
+                  }
+                }
+                // function upsideReverse() {
+                //   document.getElementById('image_changer').src='./images/arrow_down.png';
+                // }
+              </script>
+              <!-- ------------------- -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#careers">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#students">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#long_banner">Curriculum</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scholarship">Tuition</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#advisor">Advisor</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------
+                                 CAREERS
+      ----------------------------------------------------------------- -->
+      <div id="careers">
+        <div class="container">
+          <div class="row">
+            <h2 class=" col-12 offset-md-2 col-md-8 offset-lg-2 col-lg-8 ">
+              Back-end developers top the list of in-demand tech jobs for 2023!
+            </h2>
+            <div class="tech_job col-12 col-md-3 col-lg-3">
+              <h3>€49,022 - €80,000</h3>
+              <p>salary range for Back-end Developers in Europe</p>
+            </div>
+            <div class="tech_job col-12 col-md-3 col-lg-3">
+              <h3>Every 3rd Company</h3>
+              <p>in Europe needs a Back-end Developer</p>
+            </div>
+            <div class="tech_job col-12 col-md-3 col-lg-3">
+              <h3>120,000 Unfilled Jobs</h3>
+              <p>for Back-end developers In Europe</p>
+            </div>
+            <div class="tech_job col-12 col-md-3 col-lg-3">
+              <h3>€20 - €40 per hour</h3>
+              <p>is what Back-end developers earn on Upwork</p>
+            </div>
+            <h4 class="col-12 offset-lg-3 col-lg-6">What Careers You Can Do</h4>
+            <div class="career_frame col-12 offset-lg-3 col-lg-6">
+              <p>Web developer Career Paths</p>
+            </div>
+            <div class="curved_lines">
+              <img
+                class="image-responsive"
+                src="./images/Vector_career_lines.png"
+                alt=""
+              />
+            </div>
+            <div class="career_paths col-12 offset-lg-1 col-lg-10">
+              <div class="career_div">
+                <p>
+                  Back-end <br />web<br />
+                  developers
+                </p>
+              </div>
+              <div class="career_div">
+                <p>
+                  front-end <br />web<br />
+                  developers
+                </p>
+              </div>
+              <div class="career_div">
+                <p>Webmasters</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------
+                                 FRONT TO BACK
+      --------------------------------------------------------------------------- -->
+      <div id="front_to_back">
+        <div class="container">
+          <div class="row">
+            <h1 class="col-12 offset-lg-2 col-lg-8">
+              Front-End to
+              <span style="color: rgba(35, 87, 169, 1)">{Back-End}</span>
+              quickly and easy
+            </h1>
+            <div class="row">
+              <div class="under_image col-6 col-lg-5">
+                <img class="col-12" src="./images/front_to_back.png" alt="" />
+              </div>
+              <div class="div_right col-6 offset-lg-2 col-lg-6">
+                <p class="col-12">
+                  70% of students start with Front-end Academy and then they
+                  enroll in the Back-end Academy to add more skills to be able
+                  to earn more as they increase their value of skills.
+                </p>
+                <p>
+                  The front end is what users see and interact with and the back
+                  end is how everything works.
+                </p>
+                <p>
+                  The Academic Program on the Back-end Academy starts with
+                  Front-end Basics.
+                </p>
+                <p>
+                  Even if you don’t have previous Front-end knowledge, you will
+                  get it at the beginning of the program. However, we advise
+                  that you take the Front-end Academy and then you enroll in the
+                  Back-end.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <h2>
+                300 + students have gone through Creative Hub <br />IT Programs
+              </h2>
+            </div>
+            <div id="students">
+              <div class="row">
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/1_vig.png" alt="" />
+                  <h5>Vigan D.</h5>
+                  <p>
+                    “The workshops that we participate in during the Academy are
+                    very profitable for us as future programmers.”
+                  </p>
+                </div>
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/2_alm.png" alt="" />
+                  <h5>Almedin Sh.</h5>
+                  <p>
+                    “Thanks to the practice and homeworks during the lectures,
+                    today I am able to develop Front- end projects without the
+                    help of instructors.”
+                  </p>
+                </div>
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/3_shpd.png" alt="" />
+                  <h5>Shqipdona K.</h5>
+                  <p>
+                    “I studied Economics, but decided to change my career in
+                    Front-end. At Creative Hub we started to code on the very
+                    first day.”
+                  </p>
+                </div>
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/4_ade.png" alt="" />
+                  <h5>Adela Th.</h5>
+                  <p>
+                    “In the beginning, I started to learn programming on online
+                    websites, but it was difficult. Now at Creative Hub, I get
+                    to be monitored by experts and work on real projects.”
+                  </p>
+                </div>
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/5_fid.png" alt="" />
+                  <h5>Fidan H.</h5>
+                  <p>
+                    “I have 9 years of experience as a Sales Manager. I wanted
+                    to grow more in my career, so I decided to start to learn
+                    Front-end Development.”
+                  </p>
+                </div>
+                <div class="div_student col-12 col-lg-4">
+                  <img src="./images/6_eng.png" alt="" />
+                  <h5>Engjell M.</h5>
+                  <p>
+                    “I’m a student in Computer Science and Engineering but I
+                    wanted to learn more about Front-end and to practice it
+                    better. I saw Creative Hub’s program and I liked the
+                    opportunities it gives to us.”
+                  </p>
+                </div>
+              </div>
+            
+            <!-- -------------------------------------------------------------
+                          Carousel Student Images - Mobile
+          
+              ------------------------------------------------------------- -->
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="image-responsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="image-responsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="image-resonsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="image-resonsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="image-resonsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="image-resonsive" src="./images/student_background.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- ------------------------------
+                        Carousel End
+              ----------------------------- -->
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------
+                              ORIENTED PROGRAM
+      --------------------------------------------------------------------------- -->
+      <div id="oriented_program">
+        <div class="container">
+          <div class="row">
+            <h1 class="col-lg-12">
+              Creative Hub’s
+              <span id="oriented_program_h1">success-oriented program</span> is
+              a combination of:
+            </h1>
+            <div class="flexbox">
+              <div class="circle_shape">
+                <p>Personal Branding Training <br />Hire-Me Program</p>
+              </div>
+              <div class="circle_shape">
+                <p>
+                  All skills necessary to start working as Junior Back-end
+                  Developer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="description col-sm-12  col-sm-6 col-md-6 col-lg-3">
+              <h3>4 hours Personal Branding Workshop</h3>
+              <p>
+                For Developers LinkedIn is the #1 place to get noticed by
+                recruiters and get hired. Every Academy in Creative Hub starts
+                with Personal Branding Training, where the student gets his
+                LinkedIn profile professionally optimized. They learn how the
+                LinkedIn algorithm works and how to get noticed by recruiters on
+                job postings. In this way, we set your profile for success prior
+                the end of the Academy.
+              </p>
+            </div>
+            <div class="description col-sm-12  col-sm-6 col-md-6 col-lg-3">
+              <h3>150 hours instructor-led sessions</h3>
+              <p>
+                The best part of being our student is that you get to choose
+                whether you want to attend your lectures in our cozy camp;
+                beautiful classes in Prishtina or from the comfort of your home.
+                You get the chance to learn from the professional experience of
+                our lecturers. They will transfer you practical knowledge and
+                you will get homework assignments on which they will give you
+                feedback.
+              </p>
+            </div>
+            <div class="description col-sm-12   col-sm68 col-md-6 col-lg-3">
+              <h3>Practical <br />Projects</h3>
+              <p>
+                We host Masterclasses, Hackathons, or Visiting Lectures with
+                professionals from big and well- known companies in Kosovo every
+                month. This is a great opportunity for you to network with
+                accomplished people from the industry and to collaborate with
+                them to build projects for your portfolio. 97% of our students
+                rated these events 10/10 and said this is the best opportunity
+                that was given to their careers as programmers.
+              </p>
+            </div>
+            <div class="description col-sm-12  col-sm-6 col-md-6 col-lg-3">
+              <h3>
+                8 hours Hire-Me<br />
+                Program
+              </h3>
+              <p>
+                Usually, other Academies or trainings end when the student gets
+                the certificate, at Creative Hub the Academy ends when the
+                student gets a job or a paid internship.  As part of the
+                program, after finishing with the curriculum you will continue
+                with 8 hours of training with a coach that will help you to
+                build your CV/Git Portfolio/Elevator Pitch and will follow your
+                progress until you find a job.<br /><br />df
+
+                For this to successfully happen, the student should also put
+                effort during classes and complete his assignments and projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----------------------------------------------------------------------
+                          CURRICULUM - LONG BANNER
+      ------------------------------------------------------------------------ -->
+      <div id="long_banner">
+        <!-- --------------------------
+            First Half Banner
+        --------------------------  -->
+        <div id="long_1">
+          <div class="container">
+            <div class="row">
+              <p class="col-12 offset-lg-2 col-lg-8">
+                <span
+                  style="
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 43.57px;
+                  "
+                  >Curriculum</span
+                >
+                <br /><br />The Academic Program lasts 12 months.
+              </p>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Week 1: Introduction to HTML &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Introduction to web development and HTML</li>
+                  <li>HTML syntax and structure</li>
+                  <li>HTML tags and elements</li>
+                  <li>Working with links, images, and forms</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Week 2: Introduction to CSS &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Introduction to CSS and its role in web development
+                  <li>CSS syntax and selectors</li>
+                  <li>Basic CSS properties for styling HTML elements</li>
+                  <li>Creating a basic stylesheet</li>
+                  <li>Working with layout and positioning</li></li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Week 3: Bootstrap &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>How to use bootstrap</li>
+                  <li>Layouts and Grids</li>
+                  <li>Typo and Colors</li>
+                  <li>Working with Forms and Inputs</li>
+                  <li>Using Components</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Week 4: Git &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Create a git account</li>
+                  <li>Installing GitHub</li>
+                  <li>Creating a new Git repository</li>
+                  <li>Working with Branches</li>
+                  <li>Git pull, push, merge etc.</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 5-8: Introduction to &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h2 id="h2_under">Programing and PHP</h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Setting up a PHP development environment</li>
+                  <li>Variables, data types, operators, and expressions</li>
+                  <li>Control structures (if/else, loops)</li>
+                  <li>Functions and arrays</li>
+                  <li>PHP forms and user input</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 9-12: Object-Oriented 
+                </h2>
+                <h2 id="h2_under">Programming in PHP&nbsp &nbsp<img
+                  src="./images/line_h2_long_banner.png"
+                  alt=""
+                /></h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Object-oriented programming concepts (classes, objects, inheritance, polymorphism)
+                    
+                    
+                    </li>
+                  <li>Implementing OOP in PHP</li>
+                  <li>PHP exceptions and error handling</li>
+                  <li>PHP debugging techniques</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 13-16: Databases &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Introduction to MySQL</li>
+                  <li>ER Diagram</li>
+                  <li>Indexing and data types</li>
+                  <li>Database Relations</li>
+                  <li>CRUD operations in PHP</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 17-20: Introduction to Laravel &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Introduction to Laravel framework and its features</li>
+                  <li>Laravel installation and setup</li>
+                  <li>Laravel application structure and directory layout</li>
+                  <li>Routing in Laravel</li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------------------
+               Second Half Banner
+      ------------------------------------- -->
+        <div id="long_2">
+          <div class="container">
+            <div class="row">
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 21-24: Laravel Database Management &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Laravel database migrations</li>
+                  <li>Database seeding in Laravel</li>
+                  <li>Working with Eloquent ORM in Laravel</li>
+                  <li>Querying data in Laravel</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 25-28: Creating Simple Project 
+                </h2>
+                <h2 id="h2_under">
+                  with Laravel &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Following MVC pattern by using blade templates</li>
+                  <li>Creating Models, Views, Controllers</li>
+                  <li>Using Forms and Validations</li>
+                  <li>Learning how to research on the internet for different problems</li>
+                  <li>Using Google, Stackoverflow, ChatGPT</li>
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 29-32: Laravel Authentication and 
+                </h2>
+                <h2 id="h2_under">
+                  Authorization &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>User authentication in Laravel (registration, login, logout)
+                    
+                    
+                    </li>
+                  <li>Laravel authorization (using gates and policies)</li>
+                  <li>User roles and permissions in Laravel</li>
+                  <li>Social authentication in Laravel</li>
+                  
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 33-34: jQuery and AJAX &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Short introduction to jQuery</li>
+                  <li>Selectors and Forms</li>
+                  <li>Using Ajax Requests</li>
+                  <li>Data parsing</li>
+                  
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 34-37: Laravel APIs HTML &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Building RESTful APIs in Laravel</li>
+                  <li>API authentication and security</li>
+                  <li>API versioning and documentation</li>
+                  <li>Consuming APIs with Laravel</li>
+                  
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 38-40: Working with Composer &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>What is Composer and why we need</li>
+                  <li>Use composer package in our project</li>
+                  <li>Install new composer package and use it</li>
+                  
+                </ul>
+              </div>
+              <div id="week" class="col-12 offset-lg-1 col-lg-10">
+                <h2>
+                  Weeks 41-44: Laravel Project Development &nbsp &nbsp<img
+                    src="./images/line_h2_long_banner.png"
+                    alt=""
+                  />
+                </h2>
+                <h3>Students will learn</h3>
+                <ul>
+                  <li>Developing a Laravel project from scratch</li>
+                  <li>Applying concepts and techniques learned throughout the course</li>
+                  <li>Planning, designing, and implementing a functional web application</li>
+                  <li>Deploying and maintaining a Laravel project</li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------------
+                                  PROJECTS
+      ----------------------------------------------------------------------- -->
+      <div id="projects">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 offset-lg-4 col-lg-4">
+              <span style="color: rgba(242, 164, 92, 1)">
+                3
+              </span> Practical Projects
+            </h2>
+            <h4 class="col-12 offset-lg-2 col-lg-8">
+              Throughout the Academy the students will build the following projects for their Git Portfolio.
+            </h4>
+            <div class="practical_project col-12  offset-lg-2 col-lg-8">
+              <h5>Practical Project </h5>
+              <p>Simple Project with Laravel</p>
+            </div>
+            <div class="practical_project col-12  offset-lg-2 col-lg-8">
+              <h5>Practical Project </h5>
+              <p>Building API’s in Laravel</p>
+            </div>
+            <div class="practical_project col-12  offset-lg-2 col-lg-8">
+              <h5>Practical Project </h5>
+              <p>Laravel Project Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------------------
+                                     LECTURER
+      ----------------------------------------------------------------------------- -->
+      <div id="lecturer">
+        <div class="container">
+          <div class="row">
+    
+        <h1 class="col-12 offset-lg-2 col-lg-8">Lecturer</h1>
+        
+        <div class="lecturer_php col-12 offset-lg-2 col-lg-8">
+          <img class="image-responsive" src="./images/F_ces.png" alt="">
+          <div class="developer">
+            <h2>Fati Cesko</h2>
+            <p class="first_p">Senior PHP Developer at Frakton. More than 10 years experience with Web Applications, Laravel, CodeIgniter, Wordpress, PHP, MySQL, jQuery.</p>
+            <p class="second_p" >Senior PHP Developer at<br>Frakton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------------
+                                  SCHOLARSHIP 
+  ------------------------------------------------------------------------------------ -->
+  <div id="scholarship">
+    <div class="container">
+      <div class="row">
+        <h1 class="col-12 offset-lg-2 col-lg-8">Choose the track that best <span style="font-weight: 700; color: rgba(101, 169, 219, 1)";>fits</span> your needs</h1>
+        <div class="scholarship_ac white col-12 col-md-6 col-lg-6">
+          <h2>Just Academy</h2>
+          <h3>2450 €</h3>
+          <h4>150 hours</h4>
+          <p class="p_blue">Are you on a budget?<br><br>
+            Ideal for Career Boosters, people who just want to add skills to their
+            portfolio</p>
+          <p class="p_random">Access to all classes<br><br>
+            Creative Hub Certificate<br><br>
+            Hire-Me Program<br><br>
+            Personal Branding Training<br><br>
+            Real Projects
+          </p>
+          
+        </div>
+        <div class="scholarship_ac blue col-12 col-md-6 col-lg-6">
+          <h2 style="color: rgba(255, 255, 255, 1);">EU Certified Academy</h2>
+          <h3 style="color: rgba(101, 169, 219, 1)";>2850 €</h3>
+          <h4>150 hours</h4>
+          <p class="p_blue">Ideal for people who want to continue their career or education in EU and needs a recognized
+            diploma as validation</p>
+          <p style="color: rgba(255, 255, 255, 1);" class="p_random">Access to all classes<br><br>
+            Creative Hub Certificate<br><br>
+            EU Diploma Supplement with ECTS Credits<br><br>
+            Hire-Me Program<br><br>
+            Personal Branding Training<br><br>
+            Real Projects
+          </p>
+         
+        </div>
+        <h4 class="first_h4 col-12 offset-lg-3 col-lg-6">Apply for
+          <span style="
+            font-weight:700;
+            background-color: rgba(242, 164, 92, 1);
+            ">1000€</span>
+           Scholarship if you apply by June 15th.
+          
+          </h4>
+        <h4 class="col-12 offset-lg-1 col-lg-10">
+          Are you student at Creative Hub Front-end Academy? Get additional <span
+          style="font-weight: 700;
+          background-color: rgba(242, 164, 92, 1);"
+          >300€</span> off!
+          </h4>
+          <div class="form offset-3 col-6 offset-lg-5 col-lg-2">
+            <form action="#form_register">
+              <button type="submit">Register Now</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------------------------------------------------
+                          LEARNING ADVISOR
+  ----------------------------------------------------------------------- -->
+  <!-- ---------------------------------------------------------------------
+          This design is made on mobile first, then on large.
+  --------------------------------------------------------------------- --->
+  <div id="advisor">
+    <div class="container">
+      <div class="row">
+    
+    <div class="advisor_text col-12 col-lg-7">
+      <h1>Speak with our<br>
+        <span style=" color: rgba(171, 197, 221, 1); font-size: 700;">Learning Advisor</span></h1>
+        <p>Whether you are a former student or you want to know more about the programs, book a call here with our coordinator Dardania and learn more about the discounted prices (when you take Bundle courses).</p>
+        <div class="small_banner">
+          <h5>Back-End Academy</h5>
+        </div>
+        <form action="javascript:void(0)">
+          <button type="submit">Book a Call</button>
+        </form>
+    </div>
+    <div class="advisor_image col-12 col-lg-5">
+      <img src="./images/dardy.png" alt="">
+    </div>
+  </div>
+</div>
+</div>
+<!-- -----------------------------------------------------------------------------
+                         FORM REGISTRATION
+                   On mobile first, then on large.
+----------------------------------------------------------------------------- -->
+<div id="form_register">
+  <div class="container">
+    <div class="row">
+      <div class="form col-12 offset-lg-3 col-lg-6">
+        <h1>Are you ready to register today<br>
+           for <span style="font-weight: 500; color: rgba(101, 169, 219, 1);">1000€</span> discounted price?</h1>
+           <h3>Hold your spot, apply now!<br>
+            <span id="h3_span">*Scholarship challenge ends soon!</span></h3>
+            <form action="">
+
+              
+
+
+              <label for="name">Name and surname</label><br>
+              <input type="text" id="name" placeholder="ex. Albi Krasniqi" required onkeydown="return /[a-z]/i.test(event.key)"><br>
+              <label for="email">E-mail address</label><br>
+              <input type="email" id="email" placeholder="ex. albi.krasniqi@gmail.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"><br>
+              <label for="tel">Telephone number</label><br>
+              <input type="tel" id="tel" placeholder="ex. +383 72 255 545" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br>
+
+              <label for="program">Choose program</label><br>
+              
+
+<select name="program" id="program" required>
+    <option class="select" value="" disabled selected>choose an option</option>
+    <option class="select" value="just">Just Academy</option>
+    <option class="select" value="eu">EU Certified Academy</option>
+</select>
+
+       <p><input type="checkbox" id="checkbox" required/>By clicking on “Apply now” I agree and give approval to Creative Hub LLC to use and process my personal data, later store it as long as necessary for the purpose for which the data was collected, after which they will be deleted in accordance with the Law on Personal Data Protection. I reserve the right at any time to withdraw 
+        my consent.</p>
+        
+
+        <button type="submit">Apply Now</button>
+  
+        
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

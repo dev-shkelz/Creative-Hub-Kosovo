@@ -1,0 +1,2721 @@
+main {
+  // ----------------------------------------------------------------
+  //             HEADER (TOP-HEADER & BOTTOM-HEADER)
+  // ----------------------------------------------------------------
+  #header {
+    height: 105px;
+    .top_header {
+      height: 41px;
+      background-color: rgba(242, 164, 92, 1);
+      .top_left_h {
+        height: 41px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin-bottom: 0;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          @media (max-width: 992px) {
+            font-size: 10px;
+            line-height: 12px;
+            margin-left: 17px;
+          }
+        }
+      }
+      .top_right_h {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 0;
+        a {
+          text-decoration: none;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          color: rgba(41, 41, 41, 1);
+          @media (max-width: 992px) {
+            font-size: 10px;
+            line-height: 12px;
+            margin-right: 17px;
+          }
+        }
+      }
+    }
+    // ---------- Bottom Header ------------
+
+    .bottom_header {
+      height: 64px;
+      background: rgba(218, 218, 218, 0.46);
+      @media (max-width: 992px) {
+        background: rgba(255, 255, 255, 0.6);
+      }
+      .bottom_left_h {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        padding-left: 0;
+        @media (max-width: 992px) {
+          a {
+            margin-left: 17px;
+          }
+        }
+      }
+      .bottom_right_h {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 0;
+        height: 64px;
+        @media (max-width: 992px) {
+          padding-right: 14px;
+        }
+        nav {
+          display: flex;
+          justify-content: flex-end;
+
+          ul {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 27px;
+
+            li {
+              list-style: none;
+              @media (min-width: 992px) and (max-width: 1200px) {
+                white-space: nowrap;
+              }
+
+              a {
+                text-decoration: none;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                color: rgba(41, 41, 41, 1);
+              }
+            }
+          }
+        }
+        // Desktop Nav don't show in Mobile
+        .desk_mobile_none {
+          @media (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  // ------------------------------------
+  //   Mobile Hamburger Nav
+  // ------------------------------------
+  #mob_desktop_none {
+    @media (min-width: 993px) {
+      display: none;
+    }
+    top: -57px;
+    .navbar_mobile {
+      justify-content: flex-end;
+
+      button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .opened {
+        }
+      }
+      .nav_ul {
+        align-items: flex-end;
+        padding-right: 15px;
+        padding-top: 15px;
+
+        a {
+          font-weight: "inter";
+          color: #0d5bb2;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          margin-right: 5px;
+          padding-left: 15px;
+
+          width: 200%;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #f2a45c;
+            border-bottom-left-radius: 30px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  //   ----------------------------------------------------
+  //                     FIRST_CONTENT
+  //   ----------------------------------------------------
+  #first_content {
+    .left_content {
+      position: relative;
+      @media (min-width: 768px) {
+        padding-left: 0;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        width: 100%;
+      }
+
+      h3 {
+        width: 468px;
+        height: 55px;
+        background: rgba(74, 73, 69, 1);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        padding: 15px 18px 19px 17px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 50px;
+        @media (max-width: 992px) {
+          font-size: 16px;
+          max-width: 90%;
+          margin: auto;
+          margin-left: 2%;
+          // padding: 7px 9px 0px 35px;
+
+          height: 65px;
+          position: absolute;
+          top: -340px;
+          text-align: center;
+          padding-bottom: 20px;
+          padding-top: 15px;
+          margin-right: 5%;
+        }
+        @media (min-width: 576px) and (max-width: 992px) {
+          width: 100%;
+          margin-left: 5%;
+          // padding: 0;
+          padding-top: 15px;
+        }
+      }
+
+      h2 {
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        margin-top: 24px;
+        margin-bottom: 27px;
+        @media (max-width: 992px) {
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 23px;
+        }
+      }
+      .tick_paragraph {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 23px;
+        @media (max-width: 992px) {
+          margin-bottom: 11px;
+        }
+        .tick_icon {
+          img {
+            width: 10px;
+            height: 7px;
+            flex-shrink: 0;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+          @media (max-width: 992px) {
+            margin-bottom: 0;
+          }
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+      h4 {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        @media (max-width: 992px) {
+          font-size: 15px;
+          line-height: 18px;
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          padding-left: 0;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+      form {
+        margin-top: 20px;
+        margin-left: 20px;
+        @media (max-width: 992px) {
+          display: flex;
+          justify-content: center;
+          margin-top: 27px;
+        }
+        button {
+          width: 145px;
+          height: 39px;
+          border-radius: 10px;
+          background: linear-gradient(
+            90deg,
+            #6d63e1 0%,
+            #477bff 51.56%,
+            #5697e0 91.67%
+          );
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19px;
+          color: rgba(255, 255, 255, 1);
+          border: none;
+          @media (min-width: 993px) and (max-width: 1200px) {
+            margin-left: 40%;
+            margin-right: 60%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    //  --------- Split Image Container --------------
+    .right_content {
+      @media (max-width: 992px) {
+        // ---------------------------------------
+        // Below I changed the order of the image
+        // for mobile. So the image shows first.
+        // ---------------------------------------
+        order: -1;
+        margin-bottom: 70px;
+        margin-top: 40px;
+      }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        order: -1;
+        margin-bottom: 30px;
+        margin-top: -50px;
+        margin-right: auto;
+        margin-left: auto;
+        order: 3;
+      }
+      .image_first_content {
+        background: linear-gradient(
+          147.81deg,
+          #031c43 9.83%,
+          rgba(39, 103, 163, 0.7) 96.36%
+        );
+
+        width: 80%;
+        // width: 462px;
+        margin-left: 10%;
+        height: 470px;
+        margin-top: 117px;
+        // margin-left: 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 5px;
+        transition: all 0.3s ease;
+        position: relative;
+
+        @media (max-width: 992px) {
+          width: 94%;
+          height: 177px;
+          margin-top: 15px;
+          margin-left: 3%;
+        }
+        @media (width: 992px) {
+          width: 170%;
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+          width: 98%;
+          // height: 177px;
+          margin-left: 1%;
+        }
+
+        // ------------------------
+        // HOVER IMAGE EFFECT
+        // ------------------------
+        &::after {
+          position: absolute;
+          content: "Successful Careers Made Possible";
+
+          width: 80%;
+          height: 10%;
+          background: rgba(86, 151, 224, 1);
+          color: rgba(255, 255, 255, 1);
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19px;
+          top: 0;
+          left: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-bottom-left-radius: 75px;
+          border-bottom-right-radius: 75px;
+
+          opacity: 0;
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          gap: 0;
+          @media (max-width: 992px) {
+            gap: 5px;
+          }
+
+          &::after {
+            opacity: 1;
+            @media (max-width: 992px) {
+              display: none;
+            }
+          }
+          // --------------------------
+          // HOVER IMAGE EFFECT ENDING
+          // --------------------------
+
+          img {
+            &:nth-child(4) {
+              margin-top: 7px;
+              transition: all 0.3s ease;
+            }
+            &:nth-child(5) {
+              margin-top: 73px;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+
+        img {
+          width: 140px;
+          height: 258px;
+          @media (max-width: 992px) {
+            // ??????????
+            width: 100px;
+            height: 150px;
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            height: 170px;
+          }
+
+          &:nth-child(1) {
+            margin-top: 79.5px;
+            transition: all 0.3s ease;
+          }
+          &:nth-child(2) {
+            margin-top: 24px;
+            transition: all 0.3s ease;
+          }
+          &:nth-child(3) {
+            margin-top: -30px;
+            transition: all 0.3s ease;
+          }
+          &:nth-child(4) {
+            margin-top: 24px;
+            transition: all 0.3s ease;
+          }
+          &:nth-child(5) {
+            margin-top: 79.5px;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+  // ------------------------------------------------------------
+  //                    SECOND NAVBAR
+  // ------------------------------------------------------------
+
+  #second_nav {
+    height: 98px;
+    border-radius: 10px;
+    background-color: rgba(3, 28, 67, 1);
+    margin-top: 48px;
+    padding: 0 70px;
+    @media (max-width: 992px) {
+      width: 90%;
+      height: 51px;
+      margin-left: 5%;
+      display: none;
+    }
+
+    nav {
+      margin-top: 37px;
+      margin-bottom: 37px;
+      // Display flex didn't work,
+      // so I used margin. Question here!
+      // Also it didn't work on second_nav too.
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0 0;
+
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            &:hover {
+              color: rgba(41, 41, 41, 1);
+              background: rgba(240, 163, 91, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // --------------------------
+  // Mobile Nav - Hidden in LG
+  #second_mobile {
+    @media (min-width: 992px) {
+      display: none;
+    }
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(3, 28, 67, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    margin-top: 40px;
+
+    .first_a {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 800;
+      color: rgba(41, 41, 41, 1);
+      width: 140px;
+      height: 35px;
+      background: rgba(240, 163, 91, 1);
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 10px;
+    }
+    button {
+      background: rgba(255, 255, 255, 0.2);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      img {
+        color: white;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      li {
+        &:first-child {
+          margin-top: 12px;
+        }
+        a {
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          color: white;
+        }
+      }
+    }
+  }
+  // ------------------------------------------------------------------
+  //                               CAREERS
+  // ------------------------------------------------------------------
+  #careers {
+    background: url(../images/banner.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    h2 {
+      font-family: "Inter";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 79px;
+      margin-bottom: 80px;
+      color: rgba(0, 0, 0, 1);
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 27px;
+        margin-top: 46px;
+        margin-bottom: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 316px;
+        height: 81px;
+        text-align: center;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    .tech_job {
+      width: 294px;
+      height: 143px;
+      background-color: rgba(72, 113, 155, 1);
+      border-radius: 10px;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-direction: column;
+      text-align: center;
+
+      @media (max-width: 992px) {
+        height: 106px;
+        gap: 15px;
+        margin-bottom: 11px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        width: 230px;
+      }
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        width: 270px;
+      }
+
+      h3 {
+        margin-top: 28px;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 1);
+        @media (max-width: 992px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        margin-bottom: 28px;
+        font-family: Inter;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 1);
+        @media (max-width: 992px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          font-size: 15px;
+        }
+      }
+    }
+    h4 {
+      color: rgba(0, 0, 0, 1);
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 102px;
+      margin-bottom: 79px;
+      @media (max-width: 992px) {
+        font-size: 22px;
+        line-height: 27px;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin-top: 52px;
+        margin-bottom: 0;
+      }
+    }
+    .career_frame {
+      width: 619px;
+      height: 131px;
+      margin: auto;
+      border-radius: 30px;
+      border: 4px solid rgba(144, 144, 144, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 992px) {
+        width: 314px;
+        height: 47px;
+        border-radius: 20px;
+        padding: 0;
+        border: none;
+        margin-top: 37px;
+      }
+
+      p {
+        width: 548px;
+        height: 89px;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 39px;
+        padding: 25px 20px;
+        text-align: center;
+        border-radius: 25px;
+        border: none;
+        background: rgba(255, 255, 255, 1);
+        margin-bottom: 0;
+        box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.67);
+        display: flex;
+        align-items: center;
+        @media (max-width: 992px) {
+          border: 2px solid rgba(144, 144, 144, 1);
+          width: 314px;
+          height: 47px;
+          border-radius: 20px;
+          font-size: 17px;
+
+          line-height: 21px;
+        }
+      }
+    }
+    .curved_lines {
+      display: flex;
+      justify-content: center;
+      padding-top: 23px;
+      @media (max-width: 992px) {
+        margin-top: 19px;
+      }
+      img {
+        @media (max-width: 992px) {
+          width: 270px;
+          height: 40px;
+        }
+      }
+    }
+    .career_paths {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 35px;
+      margin-bottom: 48px;
+      @media (max-width: 992px) {
+        margin-top: 11px;
+        justify-content: space-evenly;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        margin-bottom: 10px;
+        margin-top: -25px;
+      }
+
+      .career_div {
+        width: 235px;
+        height: 216px;
+        border: 3px solid rgba(86, 191, 224, 1);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+          width: 93px;
+          height: 67px;
+          border-radius: 20px;
+          border: none;
+          &:nth-child(2) {
+            margin-top: 34px;
+            margin-bottom: 20px;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          width: 235px;
+          height: 216px;
+          border: none;
+        }
+
+        p {
+          background: rgba(255, 255, 255, 1);
+          box-shadow: -10px 11px 38px 0px rgba(0, 0, 0, 0.25);
+          width: 191px;
+          height: 171px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: Inter;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 27px;
+          text-transform: uppercase;
+          border-radius: 20px;
+          margin: auto;
+
+          @media (max-width: 768px) {
+            width: 93px;
+            height: 67px;
+            font-size: 12px;
+            line-height: 15px;
+            border: 3px solid rgba(86, 191, 224, 1);
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            width: 140px;
+            height: 90px;
+            font-size: 14px;
+            line-height: 15px;
+            border: 3px solid rgba(86, 191, 224, 1);
+          }
+        }
+      }
+    }
+  }
+  // ---------------------------------------------------------------------------
+  //                            FRONT TO BACK
+  // ---------------------------------------------------------------------------
+  #front_to_back {
+    background: url(../images/banner.png) no-repeat;
+    width: 100%;
+    // height: 1000px;
+    background-size: cover;
+    background-position: center center;
+    // z-index: -10;
+
+    h1 {
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 28px;
+      color: rgba(0, 0, 0, 1);
+      @media (max-width: 992px) {
+        width: 290px;
+        height: 54px;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: -10px;
+      }
+    }
+    .under_image {
+      width: 378px;
+      height: 471px;
+      background: rgba(217, 217, 217, 0.62);
+      margin-top: 70px;
+      border-radius: 20px;
+
+      @media (max-width: 992px) {
+        width: 135px;
+        height: 168px;
+        margin-left: 31px;
+        margin-top: 39px;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 504px;
+        height: 405px;
+        margin-top: 20px;
+        margin-left: -17px;
+        @media (max-width: 992px) {
+          width: 183px;
+          height: 147px;
+          margin-top: 9px;
+        }
+      }
+    }
+    .div_right {
+      margin-top: 122px;
+      gap: 20px;
+      margin-right: 0;
+      margin-left: auto;
+      @media (max-width: 992px) {
+        margin-top: 40px;
+        margin-right: 0;
+        margin-left: auto;
+      }
+      p {
+        font-family: "Inter";
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        width: 564px;
+        height: 77px;
+        @media (max-width: 992px) {
+          font-size: 14px;
+
+          line-height: 17px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          width: 400px;
+          margin-left: 80px;
+        }
+        //
+        //    -Numbers 01 02 03 04 on the left side of the paragraphs-
+        //
+        &:nth-child(1) {
+          @media (min-width: 576px) and (max-width: 992px) {
+            width: 310px;
+            height: 171px;
+            margin-left: -10px;
+            margin-top: 40px;
+            // margin-right: 20%;
+          }
+          @media (max-width: 576px) {
+            width: 150px;
+            margin-left: 20%;
+          }
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "01";
+            top: -2px;
+            left: -45px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: rgba(0, 0, 0, 1);
+            @media (max-width: 992px) {
+              font-size: 18px;
+              line-height: 22px;
+              left: -35px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          @media (max-width: 992px) {
+            width: 200%;
+            height: 51px;
+            margin-top: 31px;
+            margin-left: -85%;
+          }
+          @media (max-width: 576px) {
+            margin-top: 130px;
+          }
+          &::after {
+            position: absolute;
+            content: "02";
+            top: -2px;
+            left: -45px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: rgba(0, 0, 0, 1);
+            @media (max-width: 992px) {
+              font-size: 18px;
+              line-height: 22px;
+              left: -35px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          position: relative;
+          @media (max-width: 992px) {
+            width: 200%;
+            height: 42px;
+            margin-top: 31px;
+            margin-left: -85%;
+          }
+          &::after {
+            position: absolute;
+            content: "03";
+            top: -2px;
+            left: -45px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: rgba(0, 0, 0, 1);
+            @media (max-width: 992px) {
+              font-size: 18px;
+              line-height: 22px;
+              left: -35px;
+            }
+          }
+        }
+        &:nth-child(4) {
+          position: relative;
+          @media (max-width: 992px) {
+            width: 200%;
+            height: 119px;
+            margin-top: 31px;
+            margin-left: -85%;
+          }
+          &::after {
+            position: absolute;
+            content: "04";
+            top: -2px;
+            left: -45px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: rgba(0, 0, 0, 1);
+            @media (max-width: 992px) {
+              font-size: 18px;
+              line-height: 22px;
+              left: -35px;
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      margin-top: 112px;
+      text-align: center;
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      @media (max-width: 992px) {
+        width: 342px;
+        height: 88px;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+    }
+    #students {
+      background: url(../images/students_banner.png);
+      // z-index: -5;
+      width: 1450px;
+      height: 662px;
+      background-repeat: no repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-top: 164px;
+
+      @media (max-width: 992px) {
+        width: 100%;
+        height: 357px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+      }
+
+      .div_student {
+        @media (max-width: 992px) {
+          display: none;
+        }
+
+        background: url(../images/student_background.png) no-repeat;
+        z-index: 10;
+        width: 363px;
+        height: 337px;
+        background-size: cover;
+        background-position: center center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: -111px;
+          margin-bottom: 18px;
+        }
+        &:nth-child(3) {
+          @media (min-width: 992px) and (max-width: 1199px) {
+            margin-top: 0;
+          }
+        }
+        &:nth-child(5),
+        &:nth-child(6) {
+          @media (min-width: 992px) and (max-width: 1199px) {
+            visibility: hidden;
+          }
+        }
+
+        img {
+          margin-left: 26px;
+          margin-top: 26px;
+        }
+        h5 {
+          font-family: "Inter";
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+          position: relative;
+          color: rgba(255, 255, 255, 1);
+          margin-top: 12px;
+          margin-left: 26px;
+          &::after {
+            position: absolute;
+            content: "________________________________";
+            font-size: 8px;
+            // border: 1px solid rgba(255, 255, 255, 1);
+            left: 0;
+            top: 12px;
+          }
+        }
+        p {
+          width: 273px;
+          height: 128px;
+          margin-top: 20px;
+          margin-left: 26px;
+          font-family: "Inter";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      // ----------Carousel----------------
+      #carouselExample {
+        @media (min-width: 993px) {
+          display: none;
+        }
+        margin-top: -100px;
+
+        .carousel-inner {
+          .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              // /
+            }
+          }
+        }
+        button {
+          top: 110%;
+
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  // -----------------------------------------------------------------------------
+  //                               ORIENTED PROGRAM
+  // -----------------------------------------------------------------------------
+  #oriented_program {
+    width: 100%;
+    background: url(../images/banner.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    h1 {
+      font-family: "Inter";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 90px;
+      color: rgba(0, 0, 0, 1);
+      @media (max-width: 992px) {
+        width: 344px;
+        height: 81px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Inter;
+        font-size: 22px;
+        line-height: 27px;
+        margin-top: 40px;
+
+        // ------------------------------------
+        // Below is the ID of the span inside h1,
+        // I used it to give it color in smaller screens.
+        // ------------------------------------
+        #oriented_program_h1 {
+          color: rgba(92, 141, 186, 1);
+        }
+      }
+    }
+    // ---------------------
+    //      Shapes
+    // ---------------------
+    .flexbox {
+      margin-top: 106px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 35px;
+
+      @media (min-width: 768px) and (max-width: 900px) {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 45px;
+        padding-left: 28%;
+      }
+      @media (max-width: 480px) {
+        margin-top: 100px;
+        flex-direction: column;
+        margin-left: 15%;
+      }
+      @media (min-width: 480px) and (max-width: 768px) {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: 50px;
+      }
+
+      .circle_shape {
+        width: 350px;
+        height: 130px;
+        background: linear-gradient(
+          235deg,
+          #031c43 9.83%,
+          rgba(39, 103, 163, 0.7) 96.36%
+        );
+        border-radius: 20px;
+        padding: 23px 36px 92px 42px;
+        // &:last-child {
+        //   margin-left: 50px;
+        // } Didn't work?
+        position: relative;
+        @media (width: 768px) {
+          margin-left: -110px;
+        }
+        @media (max-width: 480px) {
+          width: 285px;
+
+          &:first-child {
+            margin-top: -50px;
+            margin-left: -10px;
+          }
+          &:last-child {
+            margin-top: 30px;
+            margin-bottom: 35px;
+            margin-left: -10px;
+          }
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 75px;
+          height: 75px;
+          background: white;
+          top: 23%;
+          left: -13%;
+          border-radius: 50%;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 75px;
+          height: 75px;
+          background: rgb(255, 255, 255);
+          top: 23%;
+          right: -13%;
+          border-radius: 50%;
+        }
+
+        p {
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 1);
+          width: 216px;
+          height: 72px;
+          position: relative;
+          @media (max-width: 992px) {
+            font-family: Inter;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+          }
+
+          &::before {
+            position: absolute;
+            content: "</>";
+            width: 66px;
+            height: 66px;
+            top: 15%;
+            left: -42%;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 85, 255);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+
+            // -------------------------------
+            // Gradient Color of '</>' symbols
+            // -------------------------------
+            background: linear-gradient(
+              312.21deg,
+              #56bfe0 12.41%,
+              #0a06d0 82.65%
+            );
+
+            background-clip: text;
+            color: transparent;
+            background-color: red;
+            // ---------------------------
+            // </> --> Gradient Color End
+            // ---------------------------
+            @media (max-width: 992px) {
+              font-size: 18px;
+            }
+          }
+          &::after {
+            position: absolute;
+            content: "Soft skills";
+            width: 140px;
+            height: 44px;
+            top: -70%;
+            left: -10%;
+            padding: 10px 20px;
+            font-family: "Inter";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 1);
+            background: rgba(168, 208, 245, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 992px) {
+              font-family: Inter;
+              font-size: 14px;
+
+              line-height: 17px;
+              text-align: center;
+            }
+          }
+        }
+        // ------------------------------------
+        // I LIKED THIS PART (below) :)
+        // "Go to last child of circle_shape, go to the paragraph,
+        // go to the paragraph::before. In resolution bigger than 576px
+        // put the </> symbol of the circle at the right side. While in mobile
+        // it will be shown at the left side."
+        // Left was -42%, so I changed it to 135%. That's not math, it's just
+        // random percentage by which the element was put on the right side."
+
+        // ------------------------------------
+        &:last-child {
+          p {
+            &::before {
+              @media (min-width: 900px) {
+                left: 135%;
+                z-index: 10;
+              }
+              @media (min-width: 900px) and (max-width: 991px) {
+                left: 275px;
+              }
+            }
+            &::after {
+              content: "Hard skills";
+            }
+          }
+        }
+      }
+    }
+
+    .description {
+      margin-top: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin-bottom: 70px;
+      @media (width: 768px) {
+        // margin-left: 0;
+      }
+
+      @media (max-width: 576px) {
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        &:first-child {
+          margin-top: 60px;
+        }
+      }
+      @media (min-width: 1200px) {
+        margin-left: 0;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        &:first-child,
+        :nth-child(2) {
+          margin-top: 70px;
+        }
+        &:nth-child(3),
+        &:last-child {
+          margin-top: -20px;
+        }
+      }
+
+      h3 {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        position: relative;
+        align-self: auto;
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: -10px;
+          left: 0;
+          width: 60%;
+          height: 7px;
+          background-color: rgba(40, 75, 116, 1);
+          @media (max-width: 992px) {
+            width: 175px;
+            bottom: -15px;
+          }
+        }
+        @media (max-width: 992px) {
+          font-size: 18px;
+          line-height: 22px;
+          margin-left: 6%;
+          margin-right: auto;
+          text-align: left;
+          width: 70%;
+        }
+      }
+      p {
+        width: 220px;
+        height: 320px;
+        margin-top: 52px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        &:last-child {
+          width: 250px;
+          height: 400px;
+          @media (max-width: 992px) {
+            width: 320px;
+            height: 150px;
+          }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            width: 200px;
+          }
+        }
+        @media (max-width: 992px) {
+          width: 70%;
+          height: 150px;
+          font-family: Inter;
+          font-size: 14px;
+          line-height: 17px;
+          margin-top: 20px;
+          margin-left: 6%;
+          margin-right: auto;
+          text-align: left;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  // ------------------------------------------------------------------------
+  //                   CURRICULUM - LONG BANNER
+  // ------------------------------------------------------------------------
+
+  // I created 2 div's (long_1 and long_2) to fit 2 backgrounds and 15 small div's.
+  // In the first div are 8 div's. In the other one are 7 div's.
+  //  I messed up a bit with the headings (h2 and h2_under) inside the small div's.
+  #long_banner {
+    @media (max-width: 992px) {
+      margin-top: 100px;
+    }
+    #week {
+      margin-top: 22px;
+      width: 900px;
+      height: 340px;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(72, 113, 155, 1);
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      @media (max-width: 992px) {
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        padding-right: 30px;
+      }
+
+      h2 {
+        @media (max-width: 992px) {
+          width: 300px;
+          height: 50px;
+          font-family: Inter;
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 12px;
+          margin-top: 0px;
+        }
+        // width: 500px;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        background: linear-gradient(
+          269.84deg,
+          #aac2dc 49.86%,
+          #56bfe0 67.4%,
+          #aac2dc 101.66%
+        );
+        background-clip: text;
+        color: transparent;
+        margin-left: 64px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        img {
+          @media (max-width: 992px) {
+            visibility: hidden;
+          }
+        }
+      }
+      // ------------------------------
+      // I created an under h2 because it affected the
+      // image (line) when the text was wrapped on 2 lines.
+      // ------------------------------
+      #h2_under {
+        margin-top: 0;
+      }
+      h3 {
+        width: 394px;
+        height: 41px;
+        background: rgba(255, 255, 255, 1);
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 1);
+        display: flex;
+        align-items: center;
+        padding-left: 11px;
+        margin-top: 32px;
+        margin-left: 64px;
+        @media (max-width: 992px) {
+          width: 95%;
+          height: 33px;
+          font-family: Inter;
+          font-size: 16px;
+          line-height: 19px;
+          margin-left: 12px;
+          margin-right: 12px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      ul {
+        margin-left: 64px;
+        margin-top: 13px;
+        padding-left: 18px;
+
+        @media (max-width: 992px) {
+          width: 300px;
+          height: 75px;
+          margin-left: 12px;
+          margin-top: 12px;
+        }
+
+        li {
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 1);
+
+          @media (max-width: 992px) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+    // -----------------------
+    //    First Half Banner
+    // -----------------------
+    #long_1 {
+      width: 100%;
+      height: 3165px;
+      background: url(../images/long_banner.png) no-repeat;
+      background-color: rgba(3, 28, 67, 1);
+      background-size: cover;
+      background-position: center center;
+      @media (max-width: 992px) {
+        height: 2207px;
+      }
+
+      p {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 37px;
+        margin-top: 52px;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #week {
+        &:nth-child(2) {
+          @media (max-width: 992px) {
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          @media (max-width: 992px) {
+            height: 250px;
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+        &:nth-child(6) {
+          height: 380px;
+          @media (min-width: 576px) and (max-width: 992px) {
+            height: 300px;
+            h2 {
+              margin-top: 15px;
+            }
+            #h2_under {
+              margin-top: -25px;
+            }
+          }
+
+          @media (max-width: 576px) {
+            height: 290px;
+            h2 {
+              margin-top: 10px;
+            }
+            #h2_under {
+              margin-top: -22px;
+            }
+          }
+        }
+        &:nth-child(7) {
+          height: 380px;
+          @media (min-width: 576px) and (max-width: 992px) {
+            height: 250px;
+            #h2_under {
+              margin-top: -30px;
+            }
+          }
+          @media (max-width: 576px) {
+            height: 250px;
+            h2 {
+              margin-top: 10px;
+            }
+
+            #h2_under {
+              margin-top: -32px;
+            }
+          }
+        }
+
+        &:last-child {
+          @media (max-width: 992px) {
+            height: 250px;
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    // ------------------------
+    //    Second Half Banner
+    // ------------------------
+    #long_2 {
+      @media (max-width: 992px) {
+        height: 1900px;
+      }
+      background: url(../images/long_banner.png);
+      background-color: rgba(3, 28, 67, 1);
+      width: 100%;
+      height: 2820px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      #week {
+        &:first-child {
+          margin-top: 50px;
+          //Problem here and with the background.
+          // In some other mobile devices, the div-s keep
+          // merging.??
+
+          @media (max-width: 992px) {
+            h2 {
+              margin-top: 10px;
+              height: 70px;
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          @media (max-width: 992px) {
+            h2 {
+              margin-bottom: -10px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          height: 380px;
+
+          @media (max-width: 992px) {
+            height: 290px;
+            h2 {
+              margin-top: 10px;
+            }
+
+            #h2_under {
+              margin-top: -25px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          height: 370px;
+          @media (max-width: 992px) {
+            height: 270px;
+            h2 {
+              margin-top: 10px;
+            }
+            #h2_under {
+              margin-top: -25px;
+              // margin-left: 13%;
+            }
+          }
+          @media (min-width: 576px) and (max-width: 992px) {
+            #h2_under {
+              margin-top: -25px;
+            }
+          }
+        }
+        &:nth-child(4) {
+          @media (max-width: 992px) {
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+        &:nth-child(5) {
+          @media (max-width: 992px) {
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+        &:nth-child(6) {
+          @media (max-width: 992px) {
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        &:last-child {
+          height: 370px;
+          @media (max-width: 992px) {
+            height: 270px;
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ------------------------------------------------------------------
+  //                           PROJECTS
+  // ------------------------------------------------------------------
+  #projects {
+    width: 100%;
+    height: 654px;
+    background: url(../images/banner.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @media (max-width: 992px) {
+      height: 585px;
+    }
+    @media (width: 992px) {
+      height: 620px;
+    }
+
+    h2 {
+      color: rgba(0, 0, 0, 0.7);
+      background-clip: text;
+      background-color: transparent;
+      font-family: "Inter";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      margin-top: 79px;
+
+      @media (max-width: 768px) {
+        font-size: 22px;
+        line-height: 27px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        margin-top: 40px;
+        // I included this media inside, to not have to
+        // write again the code above. ??
+        @media (width: 768px) {
+          width: 40%;
+          margin-left: 30%;
+          text-align: center;
+        }
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        width: auto;
+      }
+    }
+    h4 {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: rgba(0, 0, 0, 1);
+      text-align: center;
+      margin-top: 45px;
+      margin-bottom: 30px;
+      @media (max-width: 768px) {
+        width: 320px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18px;
+        @media (width: 768px) {
+          width: 40%;
+          margin-left: 30%;
+        }
+      }
+    }
+    .practical_project {
+      background-color: white;
+      width: 784px;
+      height: 107px;
+      border-radius: 10px;
+      border: 3px solid rgba(242, 164, 92, 1);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      padding-left: 50px;
+      @media (max-width: 768px) {
+        width: 305px;
+        height: 110px;
+        margin-top: 10px;
+      }
+
+      // ----------------------------
+      // Why didn't nth-child(2) work
+      // below? I'm curious. I had to use nth-of-type.
+      // ----------------------------
+      &:nth-of-type(2) {
+        h5 {
+          &::after {
+            content: "2";
+          }
+        }
+      }
+      &:last-child {
+        h5 {
+          &::after {
+            content: "3";
+          }
+        }
+      }
+
+      h5 {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 26px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: " ";
+          bottom: -2px;
+          left: 0;
+          height: 2px;
+          width: 120px;
+          background-color: rgba(97, 147, 192, 1);
+        }
+        &::after {
+          position: absolute;
+          content: "1";
+          top: -15px;
+          left: 135px;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          color: rgba(97, 147, 192, 1);
+          border: 3px solid rgba(97, 147, 192, 1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+  // --------------------------------------------------------------------
+  //                            LECTURER
+  // --------------------------------------------------------------------
+  #lecturer {
+    width: 100%;
+    height: 450px;
+    background: url(../images/background_lecturer.png), rgb(3, 28, 67);
+    background-position: center center;
+    background-size: cover;
+
+    @media (max-width: 992px) {
+      height: 230px;
+    }
+
+    h1 {
+      // text-align: left;
+      font-family: "Inter";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 30px;
+      margin-bottom: 50px;
+      @media (max-width: 992px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        text-align: center;
+      }
+    }
+
+    .lecturer_php {
+      @media (max-width: 992px) {
+        width: 300px;
+        height: 125px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (min-width: 992px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 500px;
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+      }
+      background: url(../images/background_lecturer_small.png)
+        rgba(3, 28, 67, 0.59);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      // margin-bottom: -30px;
+      width: 890px;
+      height: 240px;
+      border: 3px solid rgba(97, 147, 192, 1);
+      border-radius: 10px;
+
+      img {
+        width: 220px;
+        height: 195px;
+        @media (max-width: 992px) {
+          width: 103px;
+          height: 89px;
+        }
+      }
+      .developer {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        height: 195px;
+        @media (max-width: 992px) {
+          width: 150px;
+          height: 120px;
+          margin-left: 10px;
+          display: flex;
+          gap: 3px;
+        }
+
+        h2 {
+          @media (max-width: 992px) {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+          }
+
+          width: 170px;
+          font-family: "Inter";
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 39px;
+          color: rgba(255, 255, 255, 1);
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 210px;
+            height: 6px;
+            background: rgba(255, 255, 255, 1);
+            bottom: -5px;
+            left: 2px;
+            @media (max-width: 992px) {
+              width: 80%;
+              bottom: -10px;
+            }
+          }
+        }
+        .first_p {
+          @media (max-width: 992px) {
+            display: none;
+          }
+
+          width: 560px;
+          height: 85px;
+          font-family: "Inter";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+          color: rgba(255, 255, 255, 1);
+          position: relative;
+          &::after {
+            position: absolute;
+            content: url(../images/linkedin_icon.png);
+            top: -90px;
+            right: 10px;
+          }
+        }
+        .second_p {
+          display: none;
+          @media (max-width: 992px) {
+            display: inline-block;
+
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+  }
+  // ----------------------------------------------------------------------
+  //                            SCHOLARSHIP
+  // ----------------------------------------------------------------------
+  #scholarship {
+    background: url(../images/banner.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // height: 1540px;
+    h1 {
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 100px;
+      @media (min-width: 576px) and (max-width: 992px) {
+        font-size: 22px;
+        line-height: 27px;
+        width: 46%;
+        height: 55px;
+        margin-left: 27%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+      }
+      @media (max-width: 576px) {
+        width: 300px;
+        font-size: 22px;
+        line-height: 27px;
+
+        height: 55px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+      }
+    }
+    .white {
+      @media (min-width: 768px) and (max-width: 1400px) {
+        margin-left: auto;
+        margin-right: auto;
+        top: -50px;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        top: 0;
+      }
+      @media (max-width: 768px) {
+      }
+
+      background-color: rgba(255, 255, 255, 1);
+      margin-left: auto;
+      margin-right: 10px;
+
+      //  ----------------------------------
+      //        Before effects
+      //       on the first div
+      // ----------------------------------
+
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "1000€ Scholarship";
+        height: 55px;
+        width: 285px;
+        background-color: red;
+        top: 0;
+        left: -55px;
+        border-radius: 10px;
+        background: rgba(242, 164, 92, 1);
+        transform: rotate(-15deg);
+
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: rgba(0, 0, 0, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 992px) {
+          height: 30px;
+          width: 200px;
+          font-size: 14px;
+          font-weight: 17px;
+        }
+      }
+    }
+    .blue {
+      @media (min-width: 768px) and (max-width: 1400px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      background: linear-gradient(0deg, #031c43, #031c43),
+        linear-gradient(0deg, #0c3b83, #0c3b83);
+      position: relative;
+      margin-right: auto;
+      margin-left: 10px;
+
+      // ------------------------------
+      // Before and after effects
+      //   of the second Div
+      // ------------------------------
+
+      &::before {
+        position: absolute;
+        content: "Most Popular";
+        width: 92%;
+        left: 4%;
+        height: 85px;
+        background-color: rgba(101, 169, 219, 1);
+        top: -86px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        color: rgba(255, 255, 255, 1);
+        @media (max-width: 992px) {
+          width: 260px;
+          height: 40px;
+          top: -40px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: "1000€ Scholarship";
+        height: 55px;
+        width: 285px;
+        background-color: red;
+        top: -75px;
+        right: -55px;
+        border-radius: 10px;
+        background: rgba(242, 164, 92, 1);
+        transform: rotate(23deg);
+
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: rgba(0, 0, 0, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 992px) {
+          height: 30px;
+          width: 200px;
+          font-size: 14px;
+          font-weight: 17px;
+          top: -40px;
+        }
+      }
+    }
+    .scholarship_ac {
+      width: 580px;
+      height: 950px;
+      border: 1px solid rgba(12, 59, 131, 1);
+      border-radius: 10px;
+      padding-left: 32px;
+      margin-top: 150px;
+      @media (max-width: 992px) {
+        width: 310px;
+        height: 580px;
+        margin: 50px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h2 {
+        font-family: "Inter";
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 40px;
+        text-align: center;
+        @media (max-width: 992px) {
+          font-size: 22px;
+          line-height: 27px;
+          margin-top: 20px;
+        }
+      }
+      h3 {
+        font-family: "Inter";
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 77px;
+        color: rgba(12, 59, 131, 1);
+        text-align: center;
+        margin-top: 10px;
+        @media (max-width: 992px) {
+          font-size: 22px;
+          line-height: 27px;
+        }
+      }
+      h4 {
+        font-family: "Inter";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 25px;
+        width: 216px;
+        height: 64px;
+        background: rgba(165, 234, 238, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 992px) {
+          width: 120px;
+          height: 40px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .p_blue {
+        width: 420px;
+        height: 220px;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 1);
+        background: linear-gradient(
+            250.26deg,
+            #0b1676 32.92%,
+            #0d5bb2 58.68%,
+            #6b9ecf 100%
+          ),
+          linear-gradient(0deg, #f2a45c, #f2a45c);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border: 3px solid rgba(242, 164, 92, 1);
+        margin-top: 35px;
+        @media (max-width: 992px) {
+          width: 270px;
+          height: 170px;
+          margin-right: auto;
+
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 10px;
+        }
+      }
+      .p_random {
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 24px;
+        @media (max-width: 992px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    .first_h4 {
+      margin-top: 50px;
+      @media (max-width: 992px) {
+        width: 60%;
+        height: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 20%;
+        margin-top: -10px;
+        padding-bottom: 0;
+      }
+    }
+    h4 {
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      text-align: center;
+      @media (max-width: 992px) {
+        width: 60%;
+        height: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 20%;
+
+        margin-top: 20px;
+      }
+    }
+
+    .form {
+      form {
+        display: flex;
+        justify-content: center;
+
+        button {
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          background-color: rgba(255, 255, 255, 1);
+          padding: 10px 20px;
+          border-radius: 10px;
+          background: linear-gradient(
+            90deg,
+            #3227b3 0%,
+            #477bff 51.56%,
+            #5697e0 91.67%
+          );
+          color: rgba(255, 255, 255, 1);
+          border: none;
+          white-space: nowrap;
+
+          margin-top: 20px;
+          margin-bottom: 85px;
+          @media (max-width: 992px) {
+            margin-top: 50px;
+            margin-bottom: 55px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  // ------------------------------------------------------------
+  //                      LEARNING ADVISOR
+  // ------------------------------------------------------------
+  // -------------------------------------------------------------------------
+  //       This design is made on mobile first, then on large.
+  //         Just wanted to try starting from mobile first :)
+  // --------------------------------------------------------------------------
+  #advisor {
+    background: url(../images/adv_banner.png);
+    @media (min-width: 768px) {
+      // height: 712px;
+    }
+
+    // height: 780px;
+    .advisor_text {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 15px;
+      padding-left: auto;
+      padding-right: auto;
+      @media (min-width: 768px) {
+        margin-left: 20px;
+      }
+
+      h1 {
+        width: 320px;
+        height: 55px;
+        font-family: "Inter";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+        justify-self: left;
+        color: rgba(130, 129, 127, 1);
+        margin-top: 25px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: 768px) {
+          font-size: 36px;
+          line-height: 44px;
+          margin-left: 0;
+          margin-top: 50px;
+        }
+      }
+      p {
+        font-family: "Inter";
+        width: 320px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 1);
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: 768px) {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          width: 650px;
+          height: 130px;
+          margin-top: 35px;
+        }
+      }
+      .small_banner {
+        width: 320px;
+        height: 138px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+            248.97deg,
+            #2523b2 0%,
+            rgba(52, 132, 226, 0.609115) 54.27%,
+            rgba(22, 192, 230, 0.21) 100%
+          ),
+          url(../images/backend_backgr.png);
+        border-radius: 10px;
+        @media (min-width: 768px) {
+          width: 400px;
+          height: 250px;
+        }
+
+        h5 {
+          width: 250px;
+          height: 32px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 17px;
+          color: rgba(0, 0, 0, 1);
+          background: rgba(255, 255, 255, 1);
+          display: flex;
+          align-items: center;
+          padding-left: 12px;
+          @media (min-width: 768px) {
+            width: 350px;
+            height: 45px;
+            font-family: Inter;
+            font-size: 24px;
+
+            line-height: 29px;
+          }
+        }
+      }
+      form {
+        margin-top: 25px;
+        width: 320px;
+        margin-right: auto;
+        margin-left: auto;
+        @media (min-width: 768px) {
+          margin-left: 0;
+        }
+
+        button {
+          width: 150px;
+          height: 45px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 1);
+          padding: 10px 20px;
+          background-color: rgba(171, 197, 221, 1);
+          border-radius: 10px;
+          border: none;
+        }
+      }
+    }
+    .advisor_image {
+      width: 184px;
+      height: 263px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      @media (min-width: 768px) {
+        width: 420px;
+        height: 600px;
+        margin-top: 120px;
+        margin-right: 70px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        margin-right: 0;
+      }
+      img {
+        width: 184px;
+        height: 263px;
+        @media (min-width: 768px) {
+          width: 420px;
+          height: 600px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  // --------------------------------------------------------------------------------
+  //                          FORM REGISTRATION
+  //                     On Mobile first, then on Large.
+  // --------------------------------------------------------------------------------
+  #form_register {
+    background: url(../images/form_banner_big.png) no-repeat;
+
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      gap: 10px;
+
+      h1 {
+        text-align: center;
+        margin-top: 22px;
+        font-family: "Inter";
+
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        @media (min-width: 768px) {
+          font-size: 36px;
+          line-height: 44px;
+          margin-top: 65px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          width: 550px;
+          font-size: 28px;
+          text-align: left;
+        }
+      }
+      h3 {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        @media (min-width: 768px) {
+          font-size: 16px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      #h3_span {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      form {
+        label {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19px;
+          color: rgba(96, 96, 96, 1);
+          margin-top: 8px;
+          margin-bottom: 8px;
+          @media (min-width: 768px) {
+            margin-bottom: 12px;
+            margin-top: 12px;
+          }
+        }
+        input {
+          width: 98%;
+          border-radius: 10px;
+          height: 45px;
+          padding-left: 12px;
+          border: 1px solid rgba(146, 189, 255, 1);
+
+          &::placeholder {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: rgba(163, 163, 163, 1);
+          }
+        }
+        #program {
+          // This is the Select Menu of form
+          width: 98%;
+          height: 45px;
+          border-radius: 10px;
+          border: 1px solid rgba(146, 189, 255, 1);
+          padding-left: 12px;
+          color: rgba(163, 163, 163, 1);
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          padding-right: 10px;
+          .select {
+            text-align: center;
+            color: rgba(54, 47, 129, 0.852);
+            font-weight: 500;
+          }
+        }
+        p {
+          width: 345px;
+          height: 105px;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 15px;
+          color: rgba(133, 133, 133, 1);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          position: relative;
+
+          @media (min-width: 768px) {
+            width: 500px;
+            height: 60px;
+          }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            width: 400px;
+          }
+          @media (max-width: 576px) {
+            width: 300px;
+          }
+        }
+        #checkbox {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          top: -2px;
+          left: -25px;
+        }
+
+        button {
+          width: 98%;
+          height: 42px;
+          margin-top: 27px;
+          border-radius: 10px;
+          background: linear-gradient(0deg, #1452f5, #1452f5),
+            linear-gradient(0deg, #1f1e9e, #1f1e9e);
+          border: none;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19px;
+          color: rgba(255, 255, 255, 1);
+          @media (min-width: 768px) {
+            width: 80%;
+            margin-left: 10%;
+            height: 64px;
+          }
+        }
+      }
+    }
+  }
+}

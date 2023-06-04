@@ -1,0 +1,58 @@
+/-------------------------------------------------------------------------------------------------------
+
+This website is made with Bootstrap and CSS.
+
+My CSS is separated into two files: main.css and app.css
+
+The main.css file is grouped into two sections:
+  - One is the general(global) CSS typography,
+  - The second one is my own CSS typography
+   (here are included classes I created myself, that are used directly by the HTML file).
+
+The app.css file is a converted Scss (Sass) file, meaning
+the code is written in Scss then it is converted into Css.
+The app.css is used as the dominant CSS file.
+
+I used JavaScript only a little (in Html).
+
+You will find 'Semantic Comments' when scrolling down my code,
+which means the working sections of this website are divided
+(Html comments of working sections are named the same as Scss comments).
+I tried to be specific with my code so it will be easier for you as an editor to edit it.
+
+All media queries are written inside the Scss file.
+
+I've created the responsive design of the website for the following devices:
+
+                                  1. Mobile
+                                  2. Tablet
+                                  3. Desktop
+                                                :)
+
+--------------------------------------------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
